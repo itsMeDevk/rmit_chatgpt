@@ -1,0 +1,59 @@
+@import "./styles.scss";
+
+// hide the dotted lines around an element when it receives focus
+::-moz-focus-inner {
+  border: 0;
+} // firefox
+:focus {
+  outline: none;
+} // ie8, chrome, etc
+
+// force the top div's to fill up screen
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scrollbar-color: grey $primary-dark;
+  scroll-behavior: smooth;
+}
+
+// global default font sizes
+h1 {
+  font-size: $font-size-7;
+}
+
+h2 {
+  font-size: $font-size-5;
+}
+
+h3 {
+  font-size: $font-size-3;
+}
+
+body {
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: $font-size-1;
+  color: $primary-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// links look like normal text then accent-yellow when hovered
+a {
+  color: $primary-white;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-yellow;
+    text-decoration: none;
+  }
+}
+
+code {
+  font-family: $font-monospace;
+}

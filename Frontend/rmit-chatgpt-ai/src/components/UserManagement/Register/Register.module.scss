@@ -1,0 +1,129 @@
+@import "../../../styles/styles.scss";
+
+.register {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+    .container {
+        height: 100vh;
+    }
+
+    .leftSide {
+        background-color: #03111B;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+}
+
+.formGroup {
+    margin-top: 1rem;
+
+    .inputLabel {
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .forgotPassword {
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+
+    .Input {
+        &::before {
+            border: none;
+        }
+
+        &::before {
+            border: none;
+        }
+    }
+
+
+}
+
+.login-main {
+    border: 2px double rgb(201, 201, 201);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.logo {
+    margin-top: 1.5rem;
+    color: $primary-white;
+    font-size: 1.5rem;
+    margin-left: 6rem;
+}
+
+.submitButton {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem !important;
+    background-color: $primary-submit-btn !important;
+    color: $primary-white !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 0rem;
+
+    &:hover {
+        background-color: $primary-submit-btn-hover !important;
+    }
+}
+
+.altButton {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem !important;
+    background-color: $primary-white !important;
+    color: $primary-submit-btn !important;
+    border: 1.5px solid $primary-submit-btn !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 0rem;
+    margin-top: 0.8rem;
+
+    &:hover {
+        background-color: $primary-submit-btn-hover !important;
+        color: $primary-white !important;
+    }
+}
+
+.lineDiv {
+    margin: 1.1rem 0rem;
+    width: 100%;
+
+    .line {
+        // margin: 1.5rem 0rem;
+        // display: block;
+        // width: 100%;
+        border-bottom: 1px solid $primary-black;
+    }
+
+    .orText {
+        text-align: center;
+        font-size: 1.2rem;
+        // padding: 0rem 1rem;
+    }
+}
+
+.text {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+// .external-links {
+//     margin: 20px 0 10px 0;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+// }

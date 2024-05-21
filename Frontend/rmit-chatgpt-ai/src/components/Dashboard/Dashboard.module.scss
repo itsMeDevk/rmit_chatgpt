@@ -1,0 +1,47 @@
+@import "../../styles/styles.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.dashboard {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+    .container {
+        margin: 2rem;
+        width: 95%;
+    }
+
+    .heading {
+        color: $primary-blue !important;
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    margin: 2rem 0rem
+}
+
+.cardTitle {
+    color: $primary-blue !important;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.cardText {
+    color: $primary-blue !important;
+    font-weight: 500;
+}

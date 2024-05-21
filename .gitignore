@@ -1,0 +1,30 @@
+# Ignore Python bytecode
+__pycache__/
+
+# Ignore virtual environment
+Backend/venv/
+Backend/rmit-chatgpt-ai/
+venv/
+
+
+# dependencies
+Frontend/rmit-chatgpt-ai/node_modules
+Frontend/rmit-chatgpt-ai/.pnp
+Frontend/rmit-chatgpt-ai.pnp.js
+
+# testing
+Frontend/rmit-chatgpt-ai/coverage
+
+# production
+Frontend/rmit-chatgpt-ai/build
+
+# misc
+Frontend/rmit-chatgpt-ai/.DS_Store
+Frontend/rmit-chatgpt-ai/.env.local
+Frontend/rmit-chatgpt-ai/.env.development.local
+Frontend/rmit-chatgpt-ai/.env.test.local
+Frontend/rmit-chatgpt-ai/.env.production.local
+
+Frontend/rmit-chatgpt-ai/npm-debug.log*
+Frontend/rmit-chatgpt-ai/yarn-debug.log*
+Frontend/rmit-chatgpt-ai/yarn-error.log*

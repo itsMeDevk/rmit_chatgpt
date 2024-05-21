@@ -1,0 +1,55 @@
+@mixin phone {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+// tablet portrait
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+// tablet landscape
+@mixin small-desktop {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media (min-width: 2000px) {
+        @content;
+    }
+}
+
+@mixin tall-screen {
+    @media (min-height: 700px) {
+        @content;
+    }
+}
+
+// TODO: devices are not either phone or desktop, should account for smaller
+// desktops.
+@mixin remove-on-phone {
+    display: none;
+
+    @include desktop {
+        display: unset;
+    }
+}
+
+@mixin remove-on-short-screen {
+    display: none;
+
+    @include tall-screen {
+        display: unset;
+    }
+}

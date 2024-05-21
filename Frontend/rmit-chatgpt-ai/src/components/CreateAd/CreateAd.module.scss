@@ -1,0 +1,377 @@
+@import "../../styles/styles.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.createAd {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+    .container {
+        margin: 2rem;
+        width: 95%;
+    }
+
+    .table {
+        background-color: dimgray;
+    }
+
+    .heading {
+        color: #000054 !important;
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+}
+
+// Course Details Page
+.options {
+    color: black !important;
+    // border-bottom: 0.3px solid black !important;
+    font-weight: 500;
+    border: 2px solid $primary-gray;
+    background: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 0 rgba(123, 123, 123, 0.1), 0 0px 2px 0 rgba(185, 185, 185, 0.1);
+    margin: 0.5rem 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.optionUL {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .input_group {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .input_group_GPT {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formGroup {
+        margin: 0.5rem 0rem;
+
+        .inputLabel {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+    }
+
+    .Input {
+        box-shadow: -11px 5px 20px 0 rgba(0, 0, 0, 0.12), 0 0px 10px 0 rgba(0, 0, 0, 0.10) !important;
+    }
+
+    .selectBox {
+        margin-top: 0.2rem;
+        width: 100%;
+        border-radius: 5px !important;
+        border: none !important;
+        box-shadow: -11px 5px 20px 0 rgba(0, 0, 0, 0.12), 0 0px 10px 0 rgba(0, 0, 0, 0.10) !important;
+
+
+    }
+
+
+
+    .ConfirmBtn {
+        font-size: 1.2rem !important;
+        padding: 0.3rem 5rem !important;
+        // margin-left: 0.5rem !important;
+        border-radius: 5px !important;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        background-color: #4A3AFF !important;
+        ;
+    }
+
+    .BackBtn {
+        font-size: 1.2rem !important;
+        color: $primary-black !important;
+        padding: 0.3rem 5rem !important;
+        // margin-left: 0.5rem !important;
+        border-radius: 5px !important;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        background-color: rgba(217, 217, 217, 0.44) !important;
+        border-color: rgba(217, 217, 217) !important;
+    }
+
+    .CampaignBtn {
+        font-size: 1.2rem !important;
+        padding: 0.3rem 5rem !important;
+        // margin-left: 0.5rem !important;
+        border-radius: 5px !important;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+    }
+
+}
+
+.keywords {
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // margin: 1rem 0.5rem;
+
+    .chip {
+        font-weight: 500;
+        padding: 1rem 0.3rem;
+        font-size: $font-size-1;
+        border: 2px solid $primary-gray;
+        background: none;
+        border-radius: 15px;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0 0px 5px 0 rgba(0, 0, 0, 0.1);
+        margin: 0.5rem 0.1rem;
+        margin-bottom: 0.2rem;
+
+        &:hover {
+            background-color: $primary-gray-hover;
+        }
+    }
+}
+
+.courseLink {
+    display: inline-block !important;
+    width: 10% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: inherit !important;
+    border-radius: 0px 3px 3px 0px !important;
+}
+
+.sectionDiv {
+
+    div {
+        margin: 0rem 0.3rem;
+    }
+
+    .generatedTexts {
+
+        ul {
+            list-style: none;
+            display: block;
+            overflow-y: auto;
+        }
+
+        .chip {
+            font-weight: 500;
+            // padding: 1rem 0.3rem;
+            font-size: $font-size-1;
+            border: 2px solid $primary-gray;
+            background: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0 0px 5px 0 rgba(0, 0, 0, 0.1);
+            margin: 0.5rem 0.1rem;
+            margin-bottom: 0.2rem;
+            color: black;
+
+            div {
+                padding: 0.2rem;
+
+                &:hover {
+                    background: none;
+                }
+
+                &:active {
+                    background: none;
+                }
+            }
+
+            .scores {
+                background-color: #4A3AFF;
+                color: $primary-white;
+                text-align: center;
+                padding: 1rem 0rem;
+                border-radius: 100%;
+                font-size: $font-size-0;
+                font-weight: 600;
+
+            }
+
+            &:hover {
+                background-color: $primary-gray-hover;
+            }
+        }
+
+
+
+    }
+
+}
+
+.BtnDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .ConfirmBtn {
+        width: 40%;
+    }
+
+    .BackBtn {
+        width: 40%;
+    }
+
+    .CampaignBtn {
+        width: 40%;
+    }
+}
+
+.selectAllBtn {
+    margin-top: 0.5rem !important;
+}
+
+
+// Finish Campaign Page
+
+$brand-success: #5cb85c;
+$loader-size: 10em;
+$check-height: $loader-size/2;
+$check-width: $check-height/2;
+$check-left: (
+    $loader-size/6 + $loader-size/12
+);
+$check-thickness: 3px;
+// $check-color: $brand-success;
+$check-color: white;
+
+.circle_loader {
+    margin-bottom: $loader-size/4;
+    border: 3px solid $brand-success; // rgba(0, 0, 0, 0.2);
+    border-left-color: $check-color;
+    animation: loader-spin 1.2s infinite linear;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    width: $loader-size;
+    height: $loader-size;
+}
+
+.load_complete {
+    -webkit-animation: none;
+    animation: none;
+    border-color: $brand-success;
+    background-color: $brand-success;
+    transition: border 500ms ease-out;
+}
+
+.checkmark {
+    display: none;
+
+    &.draw:after {
+        animation-duration: 800ms;
+        animation-timing-function: ease;
+        animation-name: checkmark;
+        transform: scaleX(-1) rotate(135deg);
+    }
+
+    &:after {
+        opacity: 1;
+        height: $check-height;
+        width: $check-width;
+        transform-origin: left top;
+        border-right: $check-thickness solid $check-color;
+        border-top: $check-thickness solid $check-color;
+        content: '';
+        left: $check-left;
+        top: $check-height;
+        position: absolute;
+    }
+}
+
+.changeDiv {
+    display: block !important;
+}
+
+@keyframes loader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+
+    20% {
+        height: 0;
+        width: $check-width;
+        opacity: 1;
+    }
+
+    40% {
+        height: $check-height;
+        width: $check-width;
+        opacity: 1;
+    }
+
+    100% {
+        height: $check-height;
+        width: $check-width;
+        opacity: 1;
+    }
+}
+
+.finishCampaignContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.campainCircleDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.GoToDashboardBtn {
+    background-color: #000000 !important;
+    width: 100%;
+    font-size: $font-size-2 !important;
+    color: $primary-white !important;
+}
+
+.FinishCampHeadline {
+    display: block;
+    color: #000054 !important;
+    font-weight: 800;
+    font-size: $font-size-5;
+    margin-bottom: 0.8rem;
+}
+
+.FinishCampMessage {
+    display: block;
+    color: $primary-black !important;
+    font-weight: 500;
+    font-size: $font-size-2;
+    margin-bottom: 0.8rem;
+}

@@ -1,0 +1,44 @@
+// fonts
+@font-face {
+    font-family: 'Plus Jakarta Display';
+    src: url(./fonts/PlusJakartaDisplay-Regular.woff2) format('woff2'),
+        url(./fonts/PlusJakartaDisplay-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Display';
+    src: url(./fonts/PlusJakartaDisplay-Medium.woff2) format('woff2'),
+        url(./fonts/PlusJakartaDisplay-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Newake';
+    src: url(./fonts/NewakeDemo.woff2) format('woff2'),
+        url(./fonts/NewakeDemo.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font-primary: "Newake", "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+$font-secondary: "Plus Jakarta Display", "Poppins", sans-serif;
+$font-monospace: "Consolas", "Menlo", "Monaco", "Courier New", "monospace";
+
+// Major third type scale
+$font-size-0: 0.8rem;       // 12.80px by default
+$font-size-1: 1rem;         // 16px (body)
+$font-size-2: 1.25rem;      // 20px
+$font-size-3: 1.563rem;     // 25px (h3)
+$font-size-4: 1.953rem;     // 31.25px
+$font-size-5: 2.441rem;     // 39.06px (h2)
+$font-size-6: 3.052rem;     // 48.83px
+$font-size-7: 3.815rem;     // 61.04px (h1)
+$font-size-8: 4.768rem;     // 76.29px
+$font-size-9: 5.96rem;      // 95.37px
+$font-size-10: 7.451rem;    // 119.21px
