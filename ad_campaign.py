@@ -31,7 +31,7 @@ def chat_with_chatgpt(prompt, model="gpt-4"):
     return message
 
 
-os.environ['GOOGLE_API_KEY']="AIzaSyAcCz6RmiJWhTB5Dmb0mtn-jayLtWWHP40"
+os.environ['GOOGLE_API_KEY']=""
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 model_gemini = genai.GenerativeModel('gemini-pro')
 
