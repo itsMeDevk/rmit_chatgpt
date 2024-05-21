@@ -6,7 +6,7 @@ from src.functions.auth import cognito_valid_token_required
 import random
 
 # Set your API key for OpenAI
-openai.api_key = "sk-proj-1pNKqd0gGuzFii3Q8Iw7T3BlbkFJgCR0ccbHWWfYZefBSeXl"
+openai.api_key = ""
 
 # Create a Blueprint named 'chat_gpt_ad' with the given name
 chat_gpt_ad_bp = Blueprint('chat_gpt_ad', __name__, url_prefix='/api/chat_gpt_ad')
