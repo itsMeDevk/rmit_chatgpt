@@ -19,7 +19,7 @@ def create_rs_connection():
 
 # Configure API keys for OpenAI and Google
 # Set your API key
-openai.api_key = "sk-proj-1pNKqd0gGuzFii3Q8Iw7T3BlbkFJgCR0ccbHWWfYZefBSeXl"
+openai.api_key = ""
 def chat_with_chatgpt(prompt, model="gpt-4"):
     response = openai.ChatCompletion.create(
         model=model,
